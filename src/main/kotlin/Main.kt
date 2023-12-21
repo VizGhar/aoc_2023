@@ -2,6 +2,7 @@ import day_1.Day1
 import day_2.Day2
 import day_3.Day3
 import day_4.Day4
+import day_5.Day5
 import java.io.File
 import kotlin.system.measureTimeMillis
 
@@ -24,10 +25,11 @@ fun runAll() {
         Day2().solve()
         Day3().solve()
         Day4().solve()
+        Day5().solve()
     }
     println("All solved in $timeInMillis ms")
 }
 
 fun main() {
-    Day4().solve()
+    Day5().solve()
 }
