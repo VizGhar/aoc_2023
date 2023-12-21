@@ -10,6 +10,7 @@ import day_18.Day18
 import day_18.Day19
 import day_2.Day2
 import day_20.Day20
+import day_21.Day21
 import day_3.Day3
 import day_4.Day4
 import day_5.Day5
@@ -55,10 +56,11 @@ fun runAll() {
         Day18().solve()
         Day19().solve()
         Day20().solve()
+        Day21().solve()
     }
     println("All solved in $timeInMillis ms")
 }
 
 fun main() {
-    Day20().solve()
+    Day21().solve()
 }
