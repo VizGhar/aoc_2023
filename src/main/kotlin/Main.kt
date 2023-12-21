@@ -1,5 +1,6 @@
 import day_1.Day1
 import day_2.Day2
+import day_3.Day3
 import java.io.File
 import kotlin.system.measureTimeMillis
 
@@ -20,10 +21,11 @@ fun runAll() {
     val timeInMillis = measureTimeMillis {
         Day1().solve()
         Day2().solve()
+        Day3().solve()
     }
     println("All solved in $timeInMillis ms")
 }
 
 fun main() {
-    Day2().solve()
+    Day3().solve()
 }
