@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("io.ksmt:ksmt-core:0.5.6")
+    implementation("io.ksmt:ksmt-z3:0.5.6")
 }
 
 tasks.test {
