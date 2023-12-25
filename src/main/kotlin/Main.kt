@@ -14,6 +14,7 @@ import day_21.Day21
 import day_22.Day22
 import day_23.Day23
 import day_24.Day24
+import day_25.Day25
 import day_3.Day3
 import day_4.Day4
 import day_5.Day5
@@ -30,8 +31,8 @@ abstract class Day {
     abstract fun partB() : String
     fun solve() {
         val timeInMillis = measureTimeMillis {
-            println(partA())
-            println(partB())
+            runCatching { println(partA()) }
+            runCatching { println(partB()) }
         }
         println("Day ${this::class.simpleName!!.takeLastWhile { it.isDigit() }} solved in $timeInMillis ms")
     }
@@ -63,10 +64,11 @@ fun runAll() {
         Day22().solve()
         Day23().solve()
         Day24().solve()
+        Day25().solve()
     }
     println("All solved in $timeInMillis ms")
 }
 
 fun main() {
-    Day24().solve()
+    runAll()
 }
